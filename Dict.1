@@ -1,0 +1,43 @@
+sample = {'name':'Rafid','age':13,'country':'England'}
+print(sample)
+#Accessing values in a dictionary
+print(sample['name'])
+
+
+#no. of items
+print(f'\nnumber of items in sample = {len(sample)}')
+
+print('\nAge of student =',sample['age'])
+
+#get the list of keys only
+print('\n',sample.keys())
+
+#get the list of values only
+print('\n',sample.values())
+
+#get the list of items only
+print('\n',sample.items())
+
+#get the keys & values when both using for loop
+for key in sample.keys():
+    print('\n',key,sample[key])
+print()
+#get the keys only using for loop
+for k in sample.keys():
+    print(k)
+
+print()
+#get the values only using for loop
+for v in sample.values():
+    print(v)
+
+#Check if the key exists in the dictionary or not
+if 'city' in sample:
+    print(sample['city'],'\n')
+else:
+    print('key does not exist.')
+
+if 'age' in sample:
+    print(sample['age'],'\n')
+else:
+    print('key does not exist.')
