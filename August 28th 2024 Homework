@@ -1,0 +1,43 @@
+employee001 = {'employee001':'Jake','salary':50,000,'department':'R&D'}
+print(employee001)
+#Accessing values in a dictionary
+print(employee001['employee001'])
+
+
+#no. of items
+print(f'\nnumber of items in sample = {len(employee001)}')
+
+print('\nSalary of employee =',employee001['salary'])
+
+#get the list of keys only
+print('\n',employee001.keys())
+
+#get the list of values only
+print('\n',employee001.values())
+
+#get the list of items only
+print('\n',employee001.items())
+
+#get the keys & values when both using for loop
+for key1 in employee001.keys():
+    print('\n',key1,employee001[key1])
+print()
+#get the keys only using for loop
+for k in employee001.keys():
+    print(k)
+    
+print()
+#get the values only using for loop
+for values1 in employee001.values():
+    print(values1)
+
+#Check if the key exists in the dictionary or not
+if 'Surname' in employee001:
+    print(employee001['Surname'],'\n')
+else:
+    print('key does not exist.')
+
+if 'department' in employee001:
+    print(employee001['department'],'\n')
+else:
+    print('key does not exist.')
