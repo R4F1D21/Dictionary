@@ -1,0 +1,35 @@
+classroom = {'Rafid':{'age': 13,
+                      'marks':[99,100,92,88,94]
+                      },
+             'Jake':{'age': 11, 'marks':[89,93,100,95,96]} 
+             }
+print(classroom)
+
+#Get Rafid's details
+print('\n',classroom['Rafid'])
+
+#Get Rafid's age
+print("\nRafid's age is = ",classroom['Rafid']['age'])
+
+#Get Jake's Age
+print("\nJake's age is = ",classroom['Jake']['age'] )
+
+#Get values from a nested dictionary
+print("\nRafid's Maths test score is = ",classroom['Rafid']['marks'][1])#Index position (first number = 0, 2nd number = 1 etc.)
+print("\nJake's History test score is = ",classroom['Jake']['marks'][3])
+
+#Updating Jake's Age
+classroom['Jake']['age'] = 12
+
+#Showing updated age
+print("\nJake's updated age is = ",classroom['Jake']['age'],'\n\n\n' )
+
+#Count the occurrence of each vowel in the string entered by the user
+inputStr = input("Enter the string: ")
+vowels = {'a':0,'e':0,'i':0,'o':0,'u':0,'A':0,'E':0,'I':0,'O':0,'U':0}
+
+for c in inputStr:#C is random variable
+    if c in vowels:
+        vowels[c] += 1
+
+print(vowels)
