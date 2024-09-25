@@ -1,0 +1,16 @@
+import pgzrun
+from random import randint
+TITLE = 'Shoot the Alien'
+WIDTH = 500
+HEIGHT = 500
+
+msg = ''
+
+alien = Actor("alien")
+
+def draw():
+    screen.clear()
+    screen.fill(color=(128,0,0))
+    alien.draw()
+
+    screen.draw.text(msg, center = (250,15),fontsize = 30,color = "Blue" )
